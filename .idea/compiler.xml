@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="medicine-common" />
+        <module name="medicine-user-drug-api" />
+        <module name="medicine-canal" />
+        <module name="medicine-module" />
+        <module name="drug-sage-anagement-system" />
+        <module name="drug-search" />
+        <module name="medicine-gateway" />
+        <module name="medicine-web" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="drug-sage-anagement-system" options="-parameters" />
+      <module name="drug-search" options="-parameters" />
+      <module name="medcine-project" options="-parameters" />
+      <module name="medicine-api" options="-parameters" />
+      <module name="medicine-canal" options="-parameters" />
+      <module name="medicine-common" options="-parameters" />
+      <module name="medicine-gateway" options="-parameters" />
+      <module name="medicine-module" options="-parameters" />
+      <module name="medicine-user-drug-api" options="-parameters" />
+      <module name="medicine-web" options="-parameters" />
+    </option>
+  </component>
+</project>

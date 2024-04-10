@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/drug-sage-anagement-ystem/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/drug-sage-anagement-ystem/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/drug-search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicine-api/medicine-user-drug-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicine-canal/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicine-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicine-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicine-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicine-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicine-web/src/main/java" charset="UTF-8" />
+  </component>
+</project>

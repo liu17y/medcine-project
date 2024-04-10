@@ -1,0 +1,48 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 127.0.0.1:8848
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes: # 路由配置
+           # 药品服务
+        - id: medicine-route
+          uri: lb://medicine-service
+          predicates:
+            - Path=/api/medicine/**
+          filters:
+            - StripPrefix=1 #过滤路径/api
+          # 用户服务
+        - id: user-route
+          uri: lb://user-service
+          predicates:
+            - Path=/api/user/**,/api/menu/**,/api/category/**,/api/chinese/**,/api/client/**,/api/WMedicine/**,/api/image/**,/api/log/**,/api/req/**,/api/operation/**,/api/tcCategoryMedicine/**,/api/tcMedicine/**,/api/identification/**,/api/wMedicine/**
+          filters:
+            - StripPrefix=1
+          # 搜索服务
+        - id: search-route
+          uri: lb://search-service
+          predicates:
+            - Path=/api/search/**
+          filters:
+            - StripPrefix=1
+ribbon:
+  ReadTimeout: 3000000
+management:
+  endpoint:
+    gateway:
+      enabled: true
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  pattern:
+    console: "%msg%n"

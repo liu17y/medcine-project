@@ -1,0 +1,27 @@
+server:
+  port: 17070
+spring:
+  application:
+    name: search-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        file-extension: yaml
+        server-addr: 127.0.0.1:8848
+  elasticsearch:
+    rest:
+      uris: http://127.0.0.1:9200
+#    uris: http://127.0.0.1:9200
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  #  level:
+  #    com:
+  #      gzy:
+  #        dao: debug
+  #        # TRACE
+  pattern:
+    console: '%p%m%n'

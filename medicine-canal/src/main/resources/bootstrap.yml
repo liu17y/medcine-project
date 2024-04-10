@@ -1,0 +1,24 @@
+server:
+  port: 17073
+spring:
+  application:
+    name: canal-service
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 127.0.0.1:8848
+      discovery:
+        server-addr: 127.0.0.1:8848
+  main:
+    allow-bean-definition-overriding: true
+canal:
+  server: 192.168.23.131:11112
+  destination: example
+
+ribbon:
+  ReadTimeout: 3000000
+
+logging:
+  pattern:
+    console: "%msg%n"
